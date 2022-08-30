@@ -1,7 +1,8 @@
 package business_logic;
 
+import java.util.List;
+
 public interface IObtainResponse {
-	public Account updateAccount(Account account);
-	public Account insertAccount(Account account);
-	public Account getAccount(Account account);
+	public void insertEvent(Operation ope);
+	public String getHistory();
 }

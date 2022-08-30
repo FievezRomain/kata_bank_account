@@ -6,11 +6,13 @@ public class Operation {
 	private LocalDateTime timestamp;
 	private String operationType;
 	private double amount;
+	private String comment;
 	
-	public Operation(LocalDateTime timestamp, String operationType, double amount) {
+	public Operation(LocalDateTime timestamp, String operationType, double amount, String comment) {
 		this.timestamp = timestamp;
 		this.operationType = operationType;
 		this.amount = amount;
+		this.comment = comment;
 	}
 	
 	public LocalDateTime getTimestamp() {
@@ -23,5 +25,9 @@ public class Operation {
 	
 	public double getAmount() {
 		return this.amount;
+	}
+	
+	public String getComment() {
+		return this.comment;
 	}
 }
